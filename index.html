@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Tablas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="config">
+    <label>Estilo:</label>
+    <select id="estilo">
+      <option value="clasica">Clásica</option>
+      <option value="vintage">Vintage</option>
+      <option value="extendida">Extendida</option>
+    </select>
+    <label>Tamaño:</label>
+    <select id="tamano">
+      <option value="4">4x4</option>
+      <option value="5">5x5</option>
+    </select>
+    <button id="generarBtn">Generar</button>
+    <button id="limpiarBtn">Limpiar</button>
+    <button id="descargarBtn">Guardar PDF</button>
+<div class="mensaje-edicion">
+  👉 Toca una celda para editar la tabla.
+</div>
+  </div>
+
+  <div class="titulo-container">
+    </div>
+
+  <div id="tablas">
+    <h2></h2>
+    
+
+
+<div id="tabla1" class="tabla"></div>
+
+    
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+  <div id="selector" class="selector" style="display: none;"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
+
